@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        thead {
+            color: green;
+        }
+        
+        tbody {
+            color: blue;
+        }
+        
+        tfoot {
+            color: red;
+        }
+        
+        table,
+        th,
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The thead, tbody, and tfoot elements</h1>
+
+    <table border=1 frame=hsides rules=rows id="table">
+        <thead>
+            <tr>
+                <th id="header1">First Name</th>
+                <th id="header2">Last Name</th>
+                <th id="header3">Month</th>
+                <th id="header4">Savings</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>d</td>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>d</td>
+                <td>March</td>
+                <td>$160</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>d</td>
+                <td>June</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>j</td>
+                <td>d</td>
+                <td>July</td>
+                <td>$130</td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td>h</td>
+                <td>August</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td>n</td>
+                <td>March</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>d</td>
+                <td>January</td>
+                <td>$180</td>
+            </tr>
+            <tr>
+                <td>k</td>
+                <td>j</td>
+                <td>August</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>u</td>
+                <td>l</td>
+                <td>Decembre</td>
+                <td>$60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="footer1">First Name</td>
+                <td id="footer2">Last Name</td>
+                <td id="footer3">Month</td>
+                <td id="footer4">Savings</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
