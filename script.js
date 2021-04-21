@@ -39,7 +39,6 @@ cd$(document).ready(function() {
             }
         }).appendTo(tbody);
     }
-
      /**
      * Sorts table by the third column
      * @param {*} table 
@@ -48,7 +47,6 @@ cd$(document).ready(function() {
     function sortTableThird(table, order) {
         var asc = order,
             tbody = table.find('#tableBody');
-
         tbody.find('tr').sort(function(a, b) {
             if (asc == "asc") {
                 return $('td:nth-child(3)', a).text().localeCompare($('td:nth-child(3)', b).text());
@@ -65,7 +63,6 @@ cd$(document).ready(function() {
     function sortTableForth(table, order) {
         var asc = order,
             tbody = table.find('#tableBody');
-
         tbody.find('tr').sort(function(a, b) {
             if (asc == "asc") {
                 return $('td:nth-child(4)', a).text().localeCompare($('td:nth-child(4)', b).text());
@@ -132,11 +129,8 @@ cd$(document).ready(function() {
     });
     // swaps columns 4 and 1
     $('#footer4').click(function() {
-
         moveColumn($('#table'), 4, 1);
     });
-
-
     /**
      * Swaps columns by indexes
      * @param {*} table 
@@ -145,7 +139,6 @@ cd$(document).ready(function() {
      */
     function moveColumn(table, from, to) {
         var rows = table.find("tr");
-
         var cols;
         rows.each(function() {
             cols = jQuery(this).children('th, td');
